@@ -74,6 +74,29 @@ public class Talon extends AbstractEntity {
     public void setInstitution(Institution institution) {
         this.institution = institution;
     }
+
+    @Override
+    public String toString() {
+        String u = user == null ? null : "{" +
+                "         login: " + user.getLogin() + ",\n" +
+                "         tel: " + user.getTel() + ",\n" +
+                "         mail: " + user.getMail() + ",\n" +
+                "         nomer_kartyi: " + user.getNomer_kartyi() + "\n" + "      }";
+        return "Talon{" + "\n" +
+                "      id: " + id + ",\n" +
+                "      doctor: " + "{" + "\n" +
+                "         surname: " + doctor.getSurname() + ",\n" +
+                "         dolznost: " + doctor.getDolznost() + "\n" +
+                "      }" + "\n" +
+                "      user: " + u + ",\n" +
+                "      institution: " + "{" + "\n" +
+                "         name: " + institution.getName() + ",\n" +
+                "         address: " + institution.getAddress() + ",\n" +
+                "         tel: " + institution.getTel() + "\n" + "      }" + ",\n" +
+                "      date: " + date + ",\n" +
+                "      nomerKab: " + nomerKab + "\n" +
+                "}";
+    }
 }
 
 

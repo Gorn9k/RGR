@@ -6,9 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="RGR" />
         <module name="RGR1" />
         <module name="RGR2" />
+        <module name="RGR2(ТП)" />
+        <module name="RGR" />
       </profile>
     </annotationProcessing>
   </component>
@@ -17,6 +18,7 @@
       <module name="RGR" options="-parameters" />
       <module name="RGR1" options="-parameters" />
       <module name="RGR2" options="-parameters" />
+      <module name="RGR2(ТП)" options="-parameters" />
     </option>
   </component>
 </project>

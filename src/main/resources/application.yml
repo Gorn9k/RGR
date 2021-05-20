@@ -14,3 +14,7 @@ spring:
     database: mysql
     database-platform: org.hibernate.dialect.MySQL55Dialect
     generate-ddl: true
+    properties:
+      hibernate:
+        jdbc:
+          time_zone: UTC
